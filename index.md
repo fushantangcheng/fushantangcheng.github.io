@@ -6,3 +6,5 @@
 
 We go to the world from here.
 我们从这里走向世界。
+
+<a href="activity.md">丰富活动</a>
