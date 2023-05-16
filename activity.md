@@ -1,3 +1,4 @@
+<meta charset = "UTF-8">
 ## 我们学校的丰富活动
 ## The Rich Activities of Our School
 [![_20230514103733.jpg](https://z4a.net/images/2023/05/14/_20230514103733.jpg)](https://z4a.net/image/VxMMVN)
