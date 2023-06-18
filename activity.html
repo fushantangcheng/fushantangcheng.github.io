@@ -9,19 +9,89 @@
         <a href="https://z4a.net/image/Vxsapa"><img src="https://z4a.net/images/2023/05/14/-2023-05-14-224500.jpg" alt="-2023-05-14-224500.jpg" border="0"></a>
         <a href="https://z4a.net/image/VxMMVN"><img src="https://z4a.net/images/2023/05/14/_20230514103733.jpg" alt="_20230514103733.jpg" border="0"></a>
         <a href="https://z4a.net/image/VxMtFw"><img src="https://z4a.net/images/2023/05/14/_20230514103543.jpg" alt="_20230514103543.jpg" border="0"></a>
-        <a href="https://z4a.net/image/VxMn9C"><img src="https://z4a.net/images/2023/05/14/_20230514103713.jpg" alt="_20230514103713.jpg" border="0"></a>
-        <a href="https://z4a.net/image/VxMy9O"><img src="https://z4a.net/images/2023/05/14/index.jpg" alt="index.jpg" border="0"></a>
-        <center><button onclick="clickme()">返回首页</button></center>
+        <a href="https://z4a.net/image/VxMn9C"><img src="https://z4a.net/images/2023/05/14/_20230514103713.jpg" alt="_20230514103713.jpg" border="0"></a>        
+        <ul>
+            <li><a href="javascript:void(0)" onclick="home()">主页</a></li>
+            <li><a href="javascript:void(0)" onclick="activity()">活动</a></li>
+            <li><a href="javascript:void(0)" onclick="suscribe()">微信公众号</a></li>
+            <li><a href="javascript:void(0)" onclick="HR()">招生</a></li>
+        </ul>
     </body>
     <script>
-        function clickme(){
+        function home(){
             window.location.href='index.html'
+        }
+        function activity(){
+            window.location.href='activity.html'
+        }
+        function HR(){
+            window.loaction.href='HR.html'
+        }
+        function suscribe(){
+            window.location.href='suscribe.html'
         }
     </script>
     <style>
-        img{display: block; margin: auto; width: 40%;}
-        body{background-color:rgb(248, 189, 248);}
-        h3{text-align: center; color:rgb(159, 16, 159);}
-        h4{text-align: center; color:rgb(159, 16, 159);}
+        @media (min-width: 0px) and (max-width:768px) {
+            img{display: block; float: left; width: 184px; height: 118px;}
+            body{background-color:rgb(248, 189, 248);}
+            h3{text-align: center; color:rgb(159, 16, 159); font-size: 26px;}
+            h4{text-align: center; color:rgb(159, 16, 159); font-size: 24px;}
+            .button{
+                width:100px;
+                height: 60px;
+            }
+        }
+        @media (min-width: 768px) and (max-width:992px){
+            img{display: block; margin: auto; width: 40%;}
+            body{background-color:rgb(248, 189, 248);}
+            h3{text-align: center; color:rgb(159, 16, 159);}
+            h4{text-align: center; color:rgb(159, 16, 159);}
+        }
+        @media (min-width: 992px){
+            img{display: block; margin: auto; width: 50%;}
+            body{background-color:rgb(248, 189, 248);}
+            h3{text-align: center; color:rgb(159, 16, 159); font-size: 30px;}
+            h4{text-align: center; color:rgb(159, 16, 159); font-size: 28px;}
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* 当鼠标悬停时把链接颜色更改为 */
+        li a:hover {
+            background-color: #b1f5b1;
+        }
+        .active {
+            background-color: #aeebb0;
+        }
+        /* 为所有列表项添加灰色右边框，最后一项（last-child）除外 */
+        li {
+            border-right: 1px solid #bbb;
+        }
+        li:last-child {
+            border-right: none;
+        }
+        ul {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
     </style>
 </html>

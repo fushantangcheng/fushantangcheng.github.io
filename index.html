@@ -4,13 +4,16 @@
         <title>福山唐城外国语小学</title>
     </head>
     <body>
-        <h2 align="center">福山唐城外国语小学</h2>
-        <h2 align="center">Fushan Tangcheng Foriegn Language Primary School</h2>
+        <h3 align="center">福山唐城外国语小学</h3>
+        <h3 align="center">Fushan Tangcheng Foriegn Language Primary School</h3>
         <p align="center">福山唐城外国语小学创建于2013年9月，是福山教育集团旗下一所公办小学。学校地处浦东的中心唐镇地区，目前有两个校区。</p>
-        <a href="https://z4a.net/image/VMxEPK"><img src="https://z4a.net/images/2023/06/11/6052be120ec36.png" alt="6052be120ec36.png" border="0"></a>        <h3 align="center">“我们从这里走向世界。</h3>
-        <h4 align="center">It's the first step to the world.</h4>
-        <center><button onClick="activity()">丰富活动</button></center>
-        <center><button onClick="suscribe()">微信公众号</button></center>
+        <a href="https://z4a.net/image/VMxEPK"><img src="https://z4a.net/images/2023/06/11/6052be120ec36.png" alt="6052be120ec36.png" border="0"></a>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="home()">主页</a></li>
+            <li><a href="javascript:void(0)" onclick="activity()">活动</a></li>
+            <li><a href="javascript:void(0)" onclick="suscribe()">微信公众号</a></li>
+            <li><a href="javascript:void(0)" onclick="HR()">招生</a></li>
+        </ul>
     </body>
     <script>
         function activity(){
@@ -19,13 +22,74 @@
         function suscribe(){
             window.location.href='suscribe.html';
         }
+        function home(){
+            window.location.href='index.html';
+        }
+        function HR(){
+            window.location.href='HR.html'
+        }
     </script>
     <style>
-        img{display: block; margin: auto; width: 40%;}
-        body{background-color:rgb(248, 189, 248);}
-        h2{color:rgb(159, 16, 159);}
-        h3{color:rgb(159, 16, 159);}
-        h4{color:rgb(159, 16, 159);}
-        p{color:rgb(159, 16, 159);}
+        /* 手机端的适配 */
+        @media (min-width: 0px) and (max-width:768px) {
+            img{display: block; margin: auto; width: auto; height: auto;}
+            body{background-color:rgb(248, 189, 248);}
+            h3{color:rgb(159, 16, 159); font-size: 24px;}
+            p{color:rgb(159, 16, 159); font-size: 18px;}
+		}
+        /* 电脑端的适配 */
+        @media (min-width: 768px) and (max-width:992px){
+			img{display: block; margin: auto; width: auto; height: auto;}
+            body{background-color:rgb(248, 189, 248);}
+            h3{color:rgb(159, 16, 159);}
+            p{color:rgb(159, 16, 159);}
+			}
+        /* 更大屏幕电脑端的适配 */
+        @media (min-width: 992px) {
+			img{display: block; margin: auto; width: auto; height: auto;}
+            body{background-color:rgb(248, 189, 248);}
+            h3{color:rgb(159, 16, 159);}
+            p{color:rgb(159, 16, 159);}
+			}
+        .button{width:100px; height: 60px;}
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* 当鼠标悬停时把链接颜色更改为 */
+        li a:hover {
+            background-color: #b1f5b1;
+        }
+        .active {
+            background-color: #aeebb0;
+        }
+        /* 为所有列表项添加灰色右边框，最后一项（last-child）除外 */
+        li {
+            border-right: 1px solid #bbb;
+        }
+        li:last-child {
+            border-right: none;
+        }
+        ul {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
     </style>
 </html>
